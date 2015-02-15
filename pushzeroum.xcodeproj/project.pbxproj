@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		96048EA7DE53E8C484178104 /* libPods-pushzeroumTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 191841D0B2A6B172A93239AF /* libPods-pushzeroumTests.a */; };
 		CA9CC8471A84594A00EBAE87 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CA9CC8461A84594A00EBAE87 /* main.m */; };
 		CA9CC84A1A84594A00EBAE87 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CA9CC8491A84594A00EBAE87 /* AppDelegate.m */; };
 		CA9CC84D1A84594A00EBAE87 /* pushzeroum.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CA9CC84B1A84594A00EBAE87 /* pushzeroum.xcdatamodeld */; };
@@ -15,6 +16,7 @@
 		CA9CC8551A84594A00EBAE87 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA9CC8541A84594A00EBAE87 /* Images.xcassets */; };
 		CA9CC8581A84594A00EBAE87 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = CA9CC8561A84594A00EBAE87 /* LaunchScreen.xib */; };
 		CA9CC8641A84594B00EBAE87 /* pushzeroumTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CA9CC8631A84594B00EBAE87 /* pushzeroumTests.m */; };
+		CACD0FF21A9134070077C73D /* Utilities.m in Sources */ = {isa = PBXBuildFile; fileRef = CACD0FF11A9134070077C73D /* Utilities.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,6 +30,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		191841D0B2A6B172A93239AF /* libPods-pushzeroumTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-pushzeroumTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C7EE14B3A226EC5FAE56AA8A /* Pods-pushzeroumTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pushzeroumTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-pushzeroumTests/Pods-pushzeroumTests.debug.xcconfig"; sourceTree = "<group>"; };
 		CA9CC8411A84594A00EBAE87 /* pushzeroum.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = pushzeroum.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA9CC8451A84594A00EBAE87 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CA9CC8461A84594A00EBAE87 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -42,6 +46,11 @@
 		CA9CC85D1A84594B00EBAE87 /* pushzeroumTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = pushzeroumTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA9CC8621A84594B00EBAE87 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CA9CC8631A84594B00EBAE87 /* pushzeroumTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = pushzeroumTests.m; sourceTree = "<group>"; };
+		CACD0FEE1A912E240077C73D /* PushZeroUm-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PushZeroUm-Prefix.pch"; sourceTree = "<group>"; };
+		CACD0FEF1A912E610077C73D /* Constants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		CACD0FF01A9134070077C73D /* Utilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Utilities.h; sourceTree = "<group>"; };
+		CACD0FF11A9134070077C73D /* Utilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Utilities.m; sourceTree = "<group>"; };
+		E14E56C91C243973BAAC0B80 /* Pods-pushzeroumTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pushzeroumTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-pushzeroumTests/Pods-pushzeroumTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,18 +65,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				96048EA7DE53E8C484178104 /* libPods-pushzeroumTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A17959C7DE55BF418177B8C9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C7EE14B3A226EC5FAE56AA8A /* Pods-pushzeroumTests.debug.xcconfig */,
+				E14E56C91C243973BAAC0B80 /* Pods-pushzeroumTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		CA9CC8381A84594A00EBAE87 = {
 			isa = PBXGroup;
 			children = (
 				CA9CC8431A84594A00EBAE87 /* pushzeroum */,
 				CA9CC8601A84594B00EBAE87 /* pushzeroumTests */,
 				CA9CC8421A84594A00EBAE87 /* Products */,
+				A17959C7DE55BF418177B8C9 /* Pods */,
+				D5D52E704A85053E6351862E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -85,6 +106,7 @@
 			children = (
 				CA9CC8481A84594A00EBAE87 /* AppDelegate.h */,
 				CA9CC8491A84594A00EBAE87 /* AppDelegate.m */,
+				CACD0FEF1A912E610077C73D /* Constants.h */,
 				CA9CC84E1A84594A00EBAE87 /* ViewController.h */,
 				CA9CC84F1A84594A00EBAE87 /* ViewController.m */,
 				CA9CC8511A84594A00EBAE87 /* Main.storyboard */,
@@ -92,6 +114,8 @@
 				CA9CC8561A84594A00EBAE87 /* LaunchScreen.xib */,
 				CA9CC84B1A84594A00EBAE87 /* pushzeroum.xcdatamodeld */,
 				CA9CC8441A84594A00EBAE87 /* Supporting Files */,
+				CACD0FF01A9134070077C73D /* Utilities.h */,
+				CACD0FF11A9134070077C73D /* Utilities.m */,
 			);
 			path = pushzeroum;
 			sourceTree = "<group>";
@@ -101,6 +125,7 @@
 			children = (
 				CA9CC8451A84594A00EBAE87 /* Info.plist */,
 				CA9CC8461A84594A00EBAE87 /* main.m */,
+				CACD0FEE1A912E240077C73D /* PushZeroUm-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -120,6 +145,14 @@
 				CA9CC8621A84594B00EBAE87 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D5D52E704A85053E6351862E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				191841D0B2A6B172A93239AF /* libPods-pushzeroumTests.a */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -146,9 +179,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CA9CC86A1A84594B00EBAE87 /* Build configuration list for PBXNativeTarget "pushzeroumTests" */;
 			buildPhases = (
+				BEA7B394237C8498D323ABDB /* Check Pods Manifest.lock */,
 				CA9CC8591A84594B00EBAE87 /* Sources */,
 				CA9CC85A1A84594B00EBAE87 /* Frameworks */,
 				CA9CC85B1A84594B00EBAE87 /* Resources */,
+				0C78F51101B413FB7916DB2A /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -171,9 +206,11 @@
 				TargetAttributes = {
 					CA9CC8401A84594A00EBAE87 = {
 						CreatedOnToolsVersion = 6.1.1;
+						DevelopmentTeam = 5ZFLG4EDBU;
 					};
 					CA9CC85C1A84594B00EBAE87 = {
 						CreatedOnToolsVersion = 6.1.1;
+						DevelopmentTeam = 5ZFLG4EDBU;
 						TestTargetID = CA9CC8401A84594A00EBAE87;
 					};
 				};
@@ -217,6 +254,39 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0C78F51101B413FB7916DB2A /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-pushzeroumTests/Pods-pushzeroumTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BEA7B394237C8498D323ABDB /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		CA9CC83D1A84594A00EBAE87 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -226,6 +296,7 @@
 				CA9CC84A1A84594A00EBAE87 /* AppDelegate.m in Sources */,
 				CA9CC8501A84594A00EBAE87 /* ViewController.m in Sources */,
 				CA9CC8471A84594A00EBAE87 /* main.m in Sources */,
+				CACD0FF21A9134070077C73D /* Utilities.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -304,6 +375,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "d829fd31-a287-4ed0-8e89-f05c758f5511";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -339,6 +411,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				PROVISIONING_PROFILE = "d829fd31-a287-4ed0-8e89-f05c758f5511";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -349,9 +422,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PREFIX_HEADER = "pushzeroum/PushZeroUm-Prefix.pch";
 				INFOPLIST_FILE = pushzeroum/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -359,16 +437,24 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PREFIX_HEADER = "pushzeroum/PushZeroUm-Prefix.pch";
 				INFOPLIST_FILE = pushzeroum/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
 		CA9CC86B1A84594B00EBAE87 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C7EE14B3A226EC5FAE56AA8A /* Pods-pushzeroumTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -380,14 +466,18 @@
 				INFOPLIST_FILE = pushzeroumTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/pushzeroum.app/pushzeroum";
 			};
 			name = Debug;
 		};
 		CA9CC86C1A84594B00EBAE87 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E14E56C91C243973BAAC0B80 /* Pods-pushzeroumTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -395,6 +485,7 @@
 				INFOPLIST_FILE = pushzeroumTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/pushzeroum.app/pushzeroum";
 			};
 			name = Release;
@@ -418,6 +509,7 @@
 				CA9CC8691A84594B00EBAE87 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CA9CC86A1A84594B00EBAE87 /* Build configuration list for PBXNativeTarget "pushzeroumTests" */ = {
 			isa = XCConfigurationList;
@@ -426,6 +518,7 @@
 				CA9CC86C1A84594B00EBAE87 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

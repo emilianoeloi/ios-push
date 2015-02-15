@@ -16,8 +16,48 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    NSString *deviceToken = [defaults valueForKey:DEVICE_TOKEN];
+    
+    if(!deviceToken){
+        UIUserNotificationType types = UIUserNotificationTypeBadge |
+        UIUserNotificationTypeSound | UIUserNotificationTypeAlert;
+        
+        UIUserNotificationSettings *mySettings =
+        [UIUserNotificationSettings settingsForTypes:types categories:nil];
+        
+        [[UIApplication sharedApplication] registerUserNotificationSettings:mySettings];
+        [application registerForRemoteNotifications];
+    }
+    
     return YES;
+}
+
+// Delegation methods
+- (void)application:(UIApplication *)app didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)devToken {
+    
+    NSUserDefaults *defaults = [NSUserDefaults  standardUserDefaults];
+    [defaults setValue:[Utilities stringOfDeviceToken:devToken] forKey:DEVICE_TOKEN];
+    [defaults synchronize];
+    
+    [[NSNotificationCenter defaultCenter]
+     postNotificationName:UPDATE_DEVICE_TOKEN
+     object:self];
+    
+}
+
+- (void)application:(UIApplication*)application didReceiveRemoteNotification:(NSDictionary*)userInfo
+{
+    NSLog(@"Received notification: %@", userInfo);
+    [[NSNotificationCenter defaultCenter]
+     postNotificationName:PROCESS_RECEIVED_PUSH
+     object:self
+     userInfo:userInfo];
+}
+
+- (void)application:(UIApplication *)app didFailToRegisterForRemoteNotificationsWithError:(NSError *)err {
+    NSLog(@"Error in registration. Error: %@", err);
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {

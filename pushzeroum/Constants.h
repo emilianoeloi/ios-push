@@ -6,6 +6,8 @@
 //  Copyright (c) 2015 Pontomobi. All rights reserved.
 //
 
+#define __(str) NSLocalizedString(str, nil)
+
 #ifndef pushzeroum_Constants_h
 #define pushzeroum_Constants_h
 

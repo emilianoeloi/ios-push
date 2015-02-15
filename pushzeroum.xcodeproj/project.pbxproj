@@ -50,6 +50,9 @@
 		CACD0FEF1A912E610077C73D /* Constants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
 		CACD0FF01A9134070077C73D /* Utilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Utilities.h; sourceTree = "<group>"; };
 		CACD0FF11A9134070077C73D /* Utilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Utilities.m; sourceTree = "<group>"; };
+		CACD0FFE1A9156A40077C73D /* pt-PT */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-PT"; path = "pt-PT.lproj/Main.strings"; sourceTree = "<group>"; };
+		CACD0FFF1A9156A40077C73D /* pt-PT */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-PT"; path = "pt-PT.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		CACD10071A9158420077C73D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
 		E14E56C91C243973BAAC0B80 /* Pods-pushzeroumTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pushzeroumTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-pushzeroumTests/Pods-pushzeroumTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -104,6 +107,7 @@
 		CA9CC8431A84594A00EBAE87 /* pushzeroum */ = {
 			isa = PBXGroup;
 			children = (
+				CACD0FF31A913DD70077C73D /* Util */,
 				CA9CC8481A84594A00EBAE87 /* AppDelegate.h */,
 				CA9CC8491A84594A00EBAE87 /* AppDelegate.m */,
 				CACD0FEF1A912E610077C73D /* Constants.h */,
@@ -114,8 +118,6 @@
 				CA9CC8561A84594A00EBAE87 /* LaunchScreen.xib */,
 				CA9CC84B1A84594A00EBAE87 /* pushzeroum.xcdatamodeld */,
 				CA9CC8441A84594A00EBAE87 /* Supporting Files */,
-				CACD0FF01A9134070077C73D /* Utilities.h */,
-				CACD0FF11A9134070077C73D /* Utilities.m */,
 			);
 			path = pushzeroum;
 			sourceTree = "<group>";
@@ -145,6 +147,15 @@
 				CA9CC8621A84594B00EBAE87 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CACD0FF31A913DD70077C73D /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				CACD0FF01A9134070077C73D /* Utilities.h */,
+				CACD0FF11A9134070077C73D /* Utilities.m */,
+			);
+			name = Util;
 			sourceTree = "<group>";
 		};
 		D5D52E704A85053E6351862E /* Frameworks */ = {
@@ -222,6 +233,7 @@
 			knownRegions = (
 				en,
 				Base,
+				"pt-PT",
 			);
 			mainGroup = CA9CC8381A84594A00EBAE87;
 			productRefGroup = CA9CC8421A84594A00EBAE87 /* Products */;
@@ -323,6 +335,8 @@
 			isa = PBXVariantGroup;
 			children = (
 				CA9CC8521A84594A00EBAE87 /* Base */,
+				CACD0FFE1A9156A40077C73D /* pt-PT */,
+				CACD10071A9158420077C73D /* en */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -331,6 +345,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				CA9CC8571A84594A00EBAE87 /* Base */,
+				CACD0FFF1A9156A40077C73D /* pt-PT */,
 			);
 			name = LaunchScreen.xib;
 			sourceTree = "<group>";

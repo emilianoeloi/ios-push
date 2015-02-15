@@ -1,0 +1,30 @@
+
+/* Class = "IBUILabel"; text = "Left"; ObjectID = "3ft-G5-E2H"; */
+"3ft-G5-E2H.text" = "Left";
+
+/* Class = "IBUIButton"; normalTitle = "Right"; ObjectID = "6HQ-1v-0O2"; */
+"6HQ-1v-0O2.normalTitle" = "Right";
+
+/* Class = "IBUILabel"; text = "Right"; ObjectID = "DgX-0X-RFP"; */
+"DgX-0X-RFP.text" = "Right";
+
+/* Class = "IBUILabel"; text = "Push Recebidos"; ObjectID = "IIe-uX-f8D"; */
+"IIe-uX-f8D.text" = "Push Recebidos";
+
+/* Class = "IBUILabel"; text = "DeviceToken"; ObjectID = "LgY-qZ-wYf"; */
+"LgY-qZ-wYf.text" = "DeviceToken";
+
+/* Class = "IBUIViewController"; title = "Right"; ObjectID = "MzS-YT-p4K"; */
+"MzS-YT-p4K.title" = "Right";
+
+/* Class = "IBUIButton"; normalTitle = "Left"; ObjectID = "NwG-bE-Yes"; */
+"NwG-bE-Yes.normalTitle" = "Left";
+
+/* Class = "IBUINavigationItem"; title = "Push Notification"; ObjectID = "dL7-k0-YlK"; */
+"dL7-k0-YlK.title" = "Push Notification [en]";
+
+/* Class = "IBUILabel"; text = "Quantidade Pushes recebidos"; ObjectID = "dfx-6y-s9B"; */
+"dfx-6y-s9B.text" = "Quantidade Pushes recebidos";
+
+/* Class = "IBUIViewController"; title = "Left"; ObjectID = "tqF-6k-jxu"; */
+"tqF-6k-jxu.title" = "Left";

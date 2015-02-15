@@ -8,7 +8,7 @@
 
 #import "ViewController.h"
 
-@interface ViewController ()<UITableViewDataSource, UITableViewDelegate>
+@interface ViewController ()<UITableViewDataSource, UITableViewDelegate, UIAlertViewDelegate>
 
 @property (weak, nonatomic) IBOutlet UITextField *deviceTokenText;
 @property (weak, nonatomic) IBOutlet UITextField *amountPushs;
@@ -33,7 +33,7 @@
     
     NSDictionary *userInfo = notifiation.userInfo;
     NSDictionary *aps = [userInfo objectForKey:@"aps"];
-    NSDictionary *alert = [aps objectForKey:@"alert"];
+    NSString *alert = [aps objectForKey:@"alert"];
     [_receivedPushes addObject:alert];
     [_pushTable reloadData];
     
@@ -52,6 +52,19 @@
     
     [self backgroundColorToRed];
     [self performSelector:@selector(backgroundColorToGreen) withObject:self afterDelay:1.0f];
+}
+
+-(void)showAlertWithMessage:(NSString *)message{
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Notificação"
+                                                    message:message
+                                                   delegate:self
+                                          cancelButtonTitle:@"OK"
+                                          otherButtonTitles:nil];
+    [alert show];
+}
+
+-(void)alertView:(UIAlertView *)alertView didDismissWithButtonIndex:(NSInteger)buttonIndex{
+    
 }
 
 -(void)loadData{

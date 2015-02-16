@@ -5,10 +5,10 @@
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--Direita-->
+        <!--Right-->
         <scene sceneID="72f-FW-osX">
             <objects>
-                <viewController title="Direita" id="MzS-YT-p4K" sceneMemberID="viewController">
+                <viewController title="Right" id="MzS-YT-p4K" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="bg6-aJ-P9z"/>
                         <viewControllerLayoutGuide type="bottom" id="lJj-Ta-yh6"/>
@@ -17,7 +17,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Esquerda" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3ft-G5-E2H">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Left" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3ft-G5-E2H">
                                 <rect key="frame" x="279" y="289" width="46" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -36,7 +36,7 @@
             </objects>
             <point key="canvasLocation" x="2462" y="-460"/>
         </scene>
-        <!--Push Notification [pt]-->
+        <!--Push Notification [en]-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
@@ -115,12 +115,12 @@
                             <constraint firstItem="LgY-qZ-wYf" firstAttribute="centerY" secondItem="rvM-YB-dHl" secondAttribute="centerY" id="wvJ-fl-eTV"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Push Notification [pt]" id="dL7-k0-YlK">
+                    <navigationItem key="navigationItem" title="Push Notification [en]" id="dL7-k0-YlK">
                         <barButtonItem key="leftBarButtonItem" style="plain" id="ECe-P0-9ML">
                             <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="6HQ-1v-0O2">
                                 <rect key="frame" x="-23" y="-15" width="133" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Direita">
+                                <state key="normal" title="Right">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -132,7 +132,7 @@
                             <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="NwG-bE-Yes">
                                 <rect key="frame" x="-23" y="-15" width="133" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Esquerda">
+                                <state key="normal" title="Left">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -151,10 +151,10 @@
             </objects>
             <point key="canvasLocation" x="1504" y="282"/>
         </scene>
-        <!--Esquerda-->
+        <!--Left-->
         <scene sceneID="HaU-30-lQV">
             <objects>
-                <viewController title="Esquerda" id="tqF-6k-jxu" sceneMemberID="viewController">
+                <viewController title="Left" id="tqF-6k-jxu" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="vRA-j7-NO3"/>
                         <viewControllerLayoutGuide type="bottom" id="2vs-CG-Ffx"/>
@@ -163,7 +163,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Direita" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DgX-0X-RFP">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DgX-0X-RFP">
                                 <rect key="frame" x="272" y="289" width="47" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>

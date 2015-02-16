@@ -21,7 +21,7 @@
 "NwG-bE-Yes.normalTitle" = "Left";
 
 /* Class = "IBUINavigationItem"; title = "Push Notification"; ObjectID = "dL7-k0-YlK"; */
-"dL7-k0-YlK.title" = "Push Notification [pt]";
+"dL7-k0-YlK.title" = "Push Notification";
 
 /* Class = "IBUILabel"; text = "Quantidade Pushes recebidos"; ObjectID = "dfx-6y-s9B"; */
 "dfx-6y-s9B.text" = "Quantidade Pushes recebidos";

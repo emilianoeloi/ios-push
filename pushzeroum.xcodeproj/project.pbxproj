@@ -14,7 +14,6 @@
 		CA9CC8501A84594A00EBAE87 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CA9CC84F1A84594A00EBAE87 /* ViewController.m */; };
 		CA9CC8531A84594A00EBAE87 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA9CC8511A84594A00EBAE87 /* Main.storyboard */; };
 		CA9CC8551A84594A00EBAE87 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA9CC8541A84594A00EBAE87 /* Images.xcassets */; };
-		CA9CC8581A84594A00EBAE87 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = CA9CC8561A84594A00EBAE87 /* LaunchScreen.xib */; };
 		CA9CC8641A84594B00EBAE87 /* pushzeroumTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CA9CC8631A84594B00EBAE87 /* pushzeroumTests.m */; };
 		CACD0FF21A9134070077C73D /* Utilities.m in Sources */ = {isa = PBXBuildFile; fileRef = CACD0FF11A9134070077C73D /* Utilities.m */; };
 /* End PBXBuildFile section */
@@ -40,9 +39,7 @@
 		CA9CC84C1A84594A00EBAE87 /* pushzeroum.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = pushzeroum.xcdatamodel; sourceTree = "<group>"; };
 		CA9CC84E1A84594A00EBAE87 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		CA9CC84F1A84594A00EBAE87 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		CA9CC8521A84594A00EBAE87 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CA9CC8541A84594A00EBAE87 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		CA9CC8571A84594A00EBAE87 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		CA9CC85D1A84594B00EBAE87 /* pushzeroumTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = pushzeroumTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA9CC8621A84594B00EBAE87 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CA9CC8631A84594B00EBAE87 /* pushzeroumTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = pushzeroumTests.m; sourceTree = "<group>"; };
@@ -50,9 +47,8 @@
 		CACD0FEF1A912E610077C73D /* Constants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
 		CACD0FF01A9134070077C73D /* Utilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Utilities.h; sourceTree = "<group>"; };
 		CACD0FF11A9134070077C73D /* Utilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Utilities.m; sourceTree = "<group>"; };
-		CACD0FFE1A9156A40077C73D /* pt-PT */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-PT"; path = "pt-PT.lproj/Main.strings"; sourceTree = "<group>"; };
-		CACD0FFF1A9156A40077C73D /* pt-PT */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-PT"; path = "pt-PT.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
-		CACD10071A9158420077C73D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
+		CACD10181A9174AF0077C73D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CACD10191A9175060077C73D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
 		E14E56C91C243973BAAC0B80 /* Pods-pushzeroumTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pushzeroumTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-pushzeroumTests/Pods-pushzeroumTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -115,7 +111,6 @@
 				CA9CC84F1A84594A00EBAE87 /* ViewController.m */,
 				CA9CC8511A84594A00EBAE87 /* Main.storyboard */,
 				CA9CC8541A84594A00EBAE87 /* Images.xcassets */,
-				CA9CC8561A84594A00EBAE87 /* LaunchScreen.xib */,
 				CA9CC84B1A84594A00EBAE87 /* pushzeroum.xcdatamodeld */,
 				CA9CC8441A84594A00EBAE87 /* Supporting Files */,
 			);
@@ -231,9 +226,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
-				en,
 				Base,
-				"pt-PT",
 			);
 			mainGroup = CA9CC8381A84594A00EBAE87;
 			productRefGroup = CA9CC8421A84594A00EBAE87 /* Products */;
@@ -252,7 +245,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				CA9CC8531A84594A00EBAE87 /* Main.storyboard in Resources */,
-				CA9CC8581A84594A00EBAE87 /* LaunchScreen.xib in Resources */,
 				CA9CC8551A84594A00EBAE87 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -334,20 +326,10 @@
 		CA9CC8511A84594A00EBAE87 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				CA9CC8521A84594A00EBAE87 /* Base */,
-				CACD0FFE1A9156A40077C73D /* pt-PT */,
-				CACD10071A9158420077C73D /* en */,
+				CACD10181A9174AF0077C73D /* Base */,
+				CACD10191A9175060077C73D /* en */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		CA9CC8561A84594A00EBAE87 /* LaunchScreen.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				CA9CC8571A84594A00EBAE87 /* Base */,
-				CACD0FFF1A9156A40077C73D /* pt-PT */,
-			);
-			name = LaunchScreen.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

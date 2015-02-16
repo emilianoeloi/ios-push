@@ -45,6 +45,7 @@
      postNotificationName:UPDATE_DEVICE_TOKEN
      object:self];
     
+    NSLog(@"%@",[Utilities stringOfDeviceToken:devToken]);
 }
 
 - (void)application:(UIApplication*)application didReceiveRemoteNotification:(NSDictionary*)userInfo

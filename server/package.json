@@ -1,0 +1,22 @@
+{
+  "name": "push_zero_one_server",
+  "version": "0.0.1",
+  "description": "Push Notification Server",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Push",
+    "Notification",
+    "iOS"
+  ],
+  "author": "Emiliano Eloi",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "1.12.0",
+    "daemon": "1.1.0",
+    "express": "4.11.2",
+    "underscore": "1.7.0"
+  }
+}

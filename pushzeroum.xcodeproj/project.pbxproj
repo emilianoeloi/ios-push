@@ -48,7 +48,6 @@
 		CACD0FF01A9134070077C73D /* Utilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Utilities.h; sourceTree = "<group>"; };
 		CACD0FF11A9134070077C73D /* Utilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Utilities.m; sourceTree = "<group>"; };
 		CACD10181A9174AF0077C73D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		CACD10191A9175060077C73D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
 		E14E56C91C243973BAAC0B80 /* Pods-pushzeroumTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pushzeroumTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-pushzeroumTests/Pods-pushzeroumTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -327,7 +326,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				CACD10181A9174AF0077C73D /* Base */,
-				CACD10191A9175060077C73D /* en */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";

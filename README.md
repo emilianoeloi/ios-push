@@ -1,2 +1,8 @@
 # ios-push
-Push Notification no iOS
+
+## App
+```pod install```
+
+## Server
+```cd server```
+```npm install```

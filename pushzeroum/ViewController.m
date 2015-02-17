@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "DevicesViewController.h"
 
 @interface ViewController ()<UITableViewDataSource, UITableViewDelegate, UIAlertViewDelegate>
 
@@ -24,6 +25,7 @@
     [super viewDidLoad];
     _receivedPushes = [[NSMutableArray alloc]init];
     [self loadData];
+    [self loadDevices];
     
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(loadData) name:UPDATE_DEVICE_TOKEN object:nil];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(processReceivedPush:) name:PROCESS_RECEIVED_PUSH object:nil];
@@ -73,6 +75,12 @@
     _amountPushs.text = [NSString stringWithFormat:@"%ld",[[defaults objectForKey:PUSH_AMOUNT] longValue]];
 }
 
+-(void)loadDevices{
+    [[Services sharedService] fetchDevices:^(NSArray *devices, NSError *error) {
+        int a = 1;
+    }];
+}
+
 -(void)backgroundColorToRed{
     [self.navigationController.navigationBar setBarTintColor:[UIColor redColor]];
 }
@@ -97,6 +105,16 @@
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"PuchCell_ID"];
     cell.textLabel.text = _receivedPushes[indexPath.row];
     return cell;
+}
+
+// In a storyboard-based application, you will often want to do a little preparation before navigation
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    if([segue.identifier isEqualToString:@"openDevicesViewController"]){
+        DevicesViewController *destViewController = segue.destinationViewController;
+        [[Services sharedService] fetchDevices:^(NSArray *devices, NSError *error) {
+            [destViewController setDeviceList:devices];
+        }];
+    }
 }
 
 @end

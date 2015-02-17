@@ -6,6 +6,9 @@
 //  Copyright (c) 2015 Pontomobi. All rights reserved.
 //
 
+/// Domain
+#import "Device.h"
+
 #define __(str) NSLocalizedString(str, nil)
 
 #ifndef pushzeroum_Constants_h
@@ -16,5 +19,11 @@
 #define PROCESS_RECEIVED_PUSH @"PROCESS_RECEIVED_PUSH"
 #define PUSH_AMOUNT @"PUSH_AMOUNT"
 
+/// Callback Blocks
+typedef void (^FetchDevicesBlock)(NSArray *devices, NSError *error);
+typedef void (^SaveDeviceBlock)(NSError *error);
+
+/// Url Constants
+static NSString* const kServiceDevices = @"http://192.168.42.159:5000/api/1.0/devices";
 
 #endif

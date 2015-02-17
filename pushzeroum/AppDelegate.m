@@ -45,6 +45,12 @@
      postNotificationName:UPDATE_DEVICE_TOKEN
      object:self];
     
+    Device *device = [[Device alloc]init];
+    device.token = [Utilities stringOfDeviceToken:devToken];
+    [[Services sharedService]saveDevice:device andCompletion:^(NSError *error) {
+        NSLog(@"%@", error.description);
+    }];
+    
     NSLog(@"%@",[Utilities stringOfDeviceToken:devToken]);
 }
 

@@ -5,10 +5,10 @@
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--Left-->
+        <!--Devices-->
         <scene sceneID="72f-FW-osX">
             <objects>
-                <viewController title="Left" id="MzS-YT-p4K" sceneMemberID="viewController">
+                <viewController title="Devices" id="MzS-YT-p4K" customClass="DevicesViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="bg6-aJ-P9z"/>
                         <viewControllerLayoutGuide type="bottom" id="lJj-Ta-yh6"/>
@@ -17,20 +17,36 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Left" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3ft-G5-E2H">
-                                <rect key="frame" x="266" y="289" width="73" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="FTv-cK-CVP">
+                                <rect key="frame" x="16" y="72" width="568" height="528"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="DeviceCell_ID" id="yt6-1L-RA6">
+                                        <rect key="frame" x="0.0" y="0.0" width="399" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="yt6-1L-RA6" id="0eF-LA-7lo">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="MzS-YT-p4K" id="EdY-0R-yW4"/>
+                                    <outlet property="delegate" destination="MzS-YT-p4K" id="v0A-dV-Ksi"/>
+                                </connections>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="centerY" secondItem="3ft-G5-E2H" secondAttribute="centerY" id="Sy9-W4-2gE"/>
-                            <constraint firstAttribute="centerX" secondItem="3ft-G5-E2H" secondAttribute="centerX" constant="-2" id="wol-Kc-ZNq"/>
+                            <constraint firstItem="FTv-cK-CVP" firstAttribute="top" secondItem="bg6-aJ-P9z" secondAttribute="bottom" constant="8" symbolic="YES" id="Mr3-xC-aMN"/>
+                            <constraint firstItem="FTv-cK-CVP" firstAttribute="leading" secondItem="URH-K1-vbc" secondAttribute="leadingMargin" id="anQ-2X-9NW"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="FTv-cK-CVP" secondAttribute="trailing" id="hwk-jJ-tbT"/>
+                            <constraint firstItem="lJj-Ta-yh6" firstAttribute="top" secondItem="FTv-cK-CVP" secondAttribute="bottom" id="r86-iv-iPP"/>
                         </constraints>
                     </view>
                     <modalFormSheetSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <connections>
+                        <outlet property="devicesTable" destination="FTv-cK-CVP" id="fTB-2R-ThR"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FcG-KO-JRY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -120,11 +136,11 @@
                             <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="6HQ-1v-0O2">
                                 <rect key="frame" x="-23" y="-15" width="133" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Left">
+                                <state key="normal" title="Devices">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="MzS-YT-p4K" kind="show" id="vDG-u9-PIG"/>
+                                    <segue destination="MzS-YT-p4K" kind="show" identifier="openDevicesViewController" id="vDG-u9-PIG"/>
                                 </connections>
                             </button>
                         </barButtonItem>

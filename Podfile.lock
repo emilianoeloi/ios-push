@@ -24,15 +24,18 @@ PODS:
   - KIF (3.1.2):
     - KIF/XCTest (= 3.1.2)
   - KIF/XCTest (3.1.2)
+  - SVProgressHUD (1.1.2)
 
 DEPENDENCIES:
   - AFNetworking (~> 2.5)
   - JSONModel (~> 1.0)
   - KIF (~> 3.0)
+  - SVProgressHUD (~> 1.1)
 
 SPEC CHECKSUMS:
   AFNetworking: 8bee59492a6ff15d69130efa4d0dc67e0094a52a
   JSONModel: cbdef0fdff1cc70e913a860861d3072860efd3a1
   KIF: 068074b24dd455025e7f2a488ba4fb07b9ce047b
+  SVProgressHUD: da7a49e789af645d9279ffbca62318945a832438
 
 COCOAPODS: 0.35.0

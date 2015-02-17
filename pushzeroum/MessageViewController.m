@@ -11,13 +11,14 @@
 @implementation MessageViewController
 
 - (IBAction)sendMessage:(id)sender {
-    
+    [SVProgressHUD show];
     Message *message = [[Message alloc]init];
     message.device = _device;
     message.alert = _alert.text;
     
     [[Services sharedService]sendPush:message andCompletion:^(NSError *error) {
         NSLog(@"%@", error.description);
+        [SVProgressHUD dismiss];
     }];
     
 }

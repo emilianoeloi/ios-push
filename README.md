@@ -4,5 +4,6 @@
 ```pod install```
 
 ## Server
-```cd server
-npm install```
+```cd server```
+
+```npm install```

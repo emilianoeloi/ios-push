@@ -14,6 +14,7 @@
 + (id) sharedService;
 - (void) fetchDevices:(FetchDevicesBlock)completion;
 - (void) saveDevice:(Device *)device andCompletion:(SaveDeviceBlock)completion;
+- (void) sendPush:(Message *)message andCompletion:(SendPushBlock)completion;
 
 
 @end

@@ -1,2 +1,5 @@
 bd
 node_modules
+cert.pem
+key.pem
+key.p12

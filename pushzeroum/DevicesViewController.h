@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "DeviceCell.h"
 
 @interface DevicesViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
 @property (weak, nonatomic) IBOutlet UITableView *devicesTable;

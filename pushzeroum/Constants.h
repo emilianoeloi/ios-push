@@ -8,6 +8,7 @@
 
 /// Domain
 #import "Device.h"
+#import "Message.h"
 
 #define __(str) NSLocalizedString(str, nil)
 
@@ -22,8 +23,10 @@
 /// Callback Blocks
 typedef void (^FetchDevicesBlock)(NSArray *devices, NSError *error);
 typedef void (^SaveDeviceBlock)(NSError *error);
+typedef void (^SendPushBlock)(NSError *error);
 
 /// Url Constants
 static NSString* const kServiceDevices = @"http://192.168.42.159:5000/api/1.0/devices";
+static NSString* const kServiceSendPush = @"http://192.168.42.159:5000/api/1.0/push/send/%@";
 
 #endif

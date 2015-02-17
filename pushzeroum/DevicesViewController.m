@@ -7,6 +7,7 @@
 //
 
 #import "DevicesViewController.h"
+#import "MessageViewController.h"
 
 @implementation DevicesViewController
 
@@ -23,10 +24,19 @@
 }
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"DeviceCell_ID" forIndexPath:indexPath];
+    DeviceCell *cell = [tableView dequeueReusableCellWithIdentifier:@"DeviceCell_ID" forIndexPath:indexPath];
     Device *device = _deviceList[indexPath.row];
+    cell.device = device;
     [cell.textLabel setText:device.token];
     return cell;
+}
+
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
+    if ([segue.identifier isEqualToString:@"openMessageViewController"]) {
+        MessageViewController *destViewController = segue.destinationViewController;
+        DeviceCell *cell = (DeviceCell *)sender;
+        destViewController.device = cell.device;
+    }
 }
 
 @end

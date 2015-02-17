@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		96048EA7DE53E8C484178104 /* libPods-pushzeroumTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 191841D0B2A6B172A93239AF /* libPods-pushzeroumTests.a */; };
 		AA583A0F7B85DC03B749468C /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CE405BCA0F9ED3D3653D0BD3 /* libPods.a */; };
+		CA6279291A938CE200494E33 /* MessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CA6279281A938CE200494E33 /* MessageViewController.m */; };
+		CA62792D1A93910F00494E33 /* DeviceCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CA62792C1A93910F00494E33 /* DeviceCell.m */; };
+		CA6279301A93935000494E33 /* Message.m in Sources */ = {isa = PBXBuildFile; fileRef = CA62792F1A93935000494E33 /* Message.m */; };
 		CA9CC8471A84594A00EBAE87 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CA9CC8461A84594A00EBAE87 /* main.m */; };
 		CA9CC84A1A84594A00EBAE87 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CA9CC8491A84594A00EBAE87 /* AppDelegate.m */; };
 		CA9CC84D1A84594A00EBAE87 /* pushzeroum.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CA9CC84B1A84594A00EBAE87 /* pushzeroum.xcdatamodeld */; };
@@ -35,6 +38,12 @@
 /* Begin PBXFileReference section */
 		191841D0B2A6B172A93239AF /* libPods-pushzeroumTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-pushzeroumTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7EE14B3A226EC5FAE56AA8A /* Pods-pushzeroumTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pushzeroumTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-pushzeroumTests/Pods-pushzeroumTests.debug.xcconfig"; sourceTree = "<group>"; };
+		CA6279271A938CE200494E33 /* MessageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessageViewController.h; sourceTree = "<group>"; };
+		CA6279281A938CE200494E33 /* MessageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessageViewController.m; sourceTree = "<group>"; };
+		CA62792B1A93910F00494E33 /* DeviceCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeviceCell.h; sourceTree = "<group>"; };
+		CA62792C1A93910F00494E33 /* DeviceCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeviceCell.m; sourceTree = "<group>"; };
+		CA62792E1A93935000494E33 /* Message.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Message.h; sourceTree = "<group>"; };
+		CA62792F1A93935000494E33 /* Message.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Message.m; sourceTree = "<group>"; };
 		CA9CC8411A84594A00EBAE87 /* pushzeroum.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = pushzeroum.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA9CC8451A84594A00EBAE87 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CA9CC8461A84594A00EBAE87 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -95,6 +104,15 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		CA62792A1A9390F000494E33 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				CA62792B1A93910F00494E33 /* DeviceCell.h */,
+				CA62792C1A93910F00494E33 /* DeviceCell.m */,
+			);
+			name = Cell;
+			sourceTree = "<group>";
+		};
 		CA9CC8381A84594A00EBAE87 = {
 			isa = PBXGroup;
 			children = (
@@ -118,6 +136,7 @@
 		CA9CC8431A84594A00EBAE87 /* pushzeroum */ = {
 			isa = PBXGroup;
 			children = (
+				CA62792A1A9390F000494E33 /* Cell */,
 				CAAAB3921A92BCB70078F110 /* Business */,
 				CACD0FF31A913DD70077C73D /* Util */,
 				CA9CC8481A84594A00EBAE87 /* AppDelegate.h */,
@@ -130,6 +149,8 @@
 				CA9CC8441A84594A00EBAE87 /* Supporting Files */,
 				CAAAB3991A92C46E0078F110 /* DevicesViewController.h */,
 				CAAAB39A1A92C46E0078F110 /* DevicesViewController.m */,
+				CA6279271A938CE200494E33 /* MessageViewController.h */,
+				CA6279281A938CE200494E33 /* MessageViewController.m */,
 			);
 			path = pushzeroum;
 			sourceTree = "<group>";
@@ -169,6 +190,8 @@
 				CAAAB3941A92BCEC0078F110 /* Services.m */,
 				CAAAB3961A92BFED0078F110 /* Device.h */,
 				CAAAB3971A92BFED0078F110 /* Device.m */,
+				CA62792E1A93935000494E33 /* Message.h */,
+				CA62792F1A93935000494E33 /* Message.m */,
 			);
 			name = Business;
 			sourceTree = "<group>";
@@ -364,8 +387,11 @@
 				CA9CC8471A84594A00EBAE87 /* main.m in Sources */,
 				CAAAB39B1A92C46E0078F110 /* DevicesViewController.m in Sources */,
 				CACD0FF21A9134070077C73D /* Utilities.m in Sources */,
+				CA6279291A938CE200494E33 /* MessageViewController.m in Sources */,
 				CAAAB3981A92BFED0078F110 /* Device.m in Sources */,
 				CAAAB3951A92BCEC0078F110 /* Services.m in Sources */,
+				CA6279301A93935000494E33 /* Message.m in Sources */,
+				CA62792D1A93910F00494E33 /* DeviceCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

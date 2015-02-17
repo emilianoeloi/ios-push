@@ -51,4 +51,16 @@
     }];
 }
 
+-(void)sendPush:(Message *)message andCompletion:(SendPushBlock)completion{
+    NSDictionary *parameters = @{@"alert":message.alert};
+    AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
+    [manager POST:[NSString stringWithFormat:kServiceSendPush, message.device.token] parameters:parameters success:^(AFHTTPRequestOperation *operation, id responseObject) {
+        NSLog(@"JSON: %@", responseObject);
+        completion(nil);
+    } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+        NSLog(@"Error: %@", error);
+        completion(error);
+    }];
+}
+
 @end

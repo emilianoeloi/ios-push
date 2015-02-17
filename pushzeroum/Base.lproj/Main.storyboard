@@ -21,12 +21,15 @@
                                 <rect key="frame" x="16" y="72" width="568" height="528"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="DeviceCell_ID" id="yt6-1L-RA6">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="DeviceCell_ID" id="yt6-1L-RA6" customClass="DeviceCell">
                                         <rect key="frame" x="0.0" y="0.0" width="399" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="yt6-1L-RA6" id="0eF-LA-7lo">
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="tqF-6k-jxu" kind="show" identifier="openMessageViewController" id="pC3-4V-hyO"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
@@ -148,7 +151,7 @@
                             <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="NwG-bE-Yes">
                                 <rect key="frame" x="-23" y="-15" width="133" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Right">
+                                <state key="normal" title="Message">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -167,10 +170,10 @@
             </objects>
             <point key="canvasLocation" x="1504" y="282"/>
         </scene>
-        <!--Right-->
+        <!--Message-->
         <scene sceneID="HaU-30-lQV">
             <objects>
-                <viewController title="Right" id="tqF-6k-jxu" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Message" title="Message" id="tqF-6k-jxu" customClass="MessageViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="vRA-j7-NO3"/>
                         <viewControllerLayoutGuide type="bottom" id="2vs-CG-Ffx"/>
@@ -179,24 +182,51 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DgX-0X-RFP">
-                                <rect key="frame" x="271" y="289" width="49" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Device Token" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="822-Pf-E5g">
+                                <rect key="frame" x="16" y="72" width="568" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Teste" translatesAutoresizingMaskIntoConstraints="NO" id="c4z-R3-C5q">
+                                <rect key="frame" x="16" y="110" width="568" height="128"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="3W1-Af-rYk"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fwj-GQ-8bZ">
+                                <rect key="frame" x="277" y="246" width="46" height="30"/>
+                                <state key="normal" title="Enviar">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="sendMessage:" destination="tqF-6k-jxu" eventType="touchUpInside" id="kXG-Vb-5NF"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="centerY" secondItem="DgX-0X-RFP" secondAttribute="centerY" constant="0.5" id="fdh-tf-zM4"/>
-                            <constraint firstAttribute="centerX" secondItem="DgX-0X-RFP" secondAttribute="centerX" constant="5" id="vwV-ER-iAl"/>
+                            <constraint firstItem="c4z-R3-C5q" firstAttribute="leading" secondItem="6gR-J0-4bM" secondAttribute="leadingMargin" id="0rh-pR-fW5"/>
+                            <constraint firstItem="822-Pf-E5g" firstAttribute="top" secondItem="vRA-j7-NO3" secondAttribute="bottom" constant="8" symbolic="YES" id="2bA-5X-uRq"/>
+                            <constraint firstItem="Fwj-GQ-8bZ" firstAttribute="top" secondItem="c4z-R3-C5q" secondAttribute="bottom" constant="8" symbolic="YES" id="AhD-PY-Vny"/>
+                            <constraint firstItem="822-Pf-E5g" firstAttribute="leading" secondItem="6gR-J0-4bM" secondAttribute="leadingMargin" id="Gcd-Xh-Mkg"/>
+                            <constraint firstItem="c4z-R3-C5q" firstAttribute="centerX" secondItem="Fwj-GQ-8bZ" secondAttribute="centerX" id="V1W-xr-sbg"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="c4z-R3-C5q" secondAttribute="trailing" id="YL6-0Y-z7C"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="822-Pf-E5g" secondAttribute="trailing" id="dJ6-V4-56d"/>
+                            <constraint firstItem="c4z-R3-C5q" firstAttribute="top" secondItem="822-Pf-E5g" secondAttribute="bottom" constant="8" symbolic="YES" id="jRr-Mn-TZ9"/>
                         </constraints>
                     </view>
                     <modalFormSheetSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <connections>
+                        <outlet property="alert" destination="c4z-R3-C5q" id="wIJ-Bu-qps"/>
+                        <outlet property="deviceToken" destination="822-Pf-E5g" id="eQ5-Qo-LTc"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4dY-M5-qac" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2472" y="544"/>
+            <point key="canvasLocation" x="3236" y="-186"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="8De-RB-W2I">
@@ -223,4 +253,7 @@
             <point key="canvasLocation" x="428" y="943"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="pC3-4V-hyO"/>
+    </inferredMetricsTieBreakers>
 </document>
